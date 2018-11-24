@@ -1,24 +1,24 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2016 The Bitcoin Core developers
+// Copyright (c) 2009-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/fabcoin-config.h"
+#include <config/fabcoin-config.h>
 #endif
 
-#include "chainparams.h"
-#include "clientversion.h"
-#include "compat.h"
-#include "fs.h"
-#include "rpc/server.h"
-#include "init.h"
-#include "noui.h"
-#include "scheduler.h"
-#include "util.h"
-#include "httpserver.h"
-#include "httprpc.h"
-#include "utilstrencodings.h"
+#include <chainparams.h>
+#include <clientversion.h>
+#include <compat.h>
+#include <fs.h>
+#include <rpc/server.h>
+#include <init.h>
+#include <noui.h>
+#include <scheduler.h>
+#include <util.h>
+#include <httpserver.h>
+#include <httprpc.h>
+#include <utilstrencodings.h>
 
 #include <boost/thread.hpp>
 
@@ -30,7 +30,7 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called Fabcoin (https://www.fabcoin.pro/),
+ * This is the developer documentation of the reference client for an experimental new digital currency called Fabcoin (https://www.fabcoin.org/),
  * which enables instant payments to anyone, anywhere in the world. Fabcoin uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *

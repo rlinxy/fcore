@@ -73,7 +73,7 @@ Options when installing required Boost library files:
 individual boost development packages, so the following can be used to only
 install necessary parts of boost:
 
-        sudo apt-get install libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev libsodium-dev
+        sudo apt-get install libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev
 
 2. If that doesn't work, you can install all boost development packages with:
 
@@ -144,6 +144,20 @@ To build with Qt 5 (recommended) you need the following:
 libqrencode (optional) can be installed with:
 
     sudo dnf install qrencode-devel
+   
+Dependency Build Instructions: CentOS
+-------------------------------------
+
+You need to build boost manually, and if it's not in standard library paths, you need to add `/path/to/boost/lib` into `LD_LIBRARY_PATH` env when building Fabcoin.
+
+Build requirements:
+
+    sudo yum install epel-release
+    sudo yum install gcc-c++ libtool libdb4-cxx-devel openssl-devel libevent-devel
+    
+To build with Qt 5 (recommended) you need the following:
+
+    sudo yum install qt5-qttools-devel protobuf-devel qrencode-devel
 
 Notes
 -----
